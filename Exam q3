@@ -55,7 +55,9 @@ public class Queue{
     return newlink;}
     
   public void remove(){
-    this.head
+    Link temp = head;
+    this.head = this.head.next;
+    
   
 --------------------------------------------------------------
 

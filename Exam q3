@@ -25,7 +25,15 @@ public class Stack{
    public Link peek(Link newlink){
     return head;}
     
-  .......
+  public void pop(){
+    Link temp=head;
+    this.head=this.head.next;
+    length=length-1;
+    return temp;}
+    
+    
+    length=length-1;}
+    
   
 --------------------------------------------------------------
   
@@ -43,11 +51,17 @@ public class Queue{
     head=newlink;}
     length=length+1;}
     
-  .......
+  public Link peek(){
+    return newlink;}
+    
+  public void remove(){
+    this.head.
   
 --------------------------------------------------------------
 
 a)  Explain what a Stack is.  Specify if it is LIFO or FIFO.
+==> A stack is a vertical arrangement of link on top of each other. It follows Last in first out (LIFO). In a stack we can pop out the top most link or we can peek on the top most object or we can push in a new head at the top. An example of the stack would be the stack of dishes during lunch period. The topmost link on the stack is the head and it is the last one to go in but the first one to go out because the we pop the link that is on the top.
 b)  Complete the Stack class by writing the "pop" method.
 c)  Explain what a Queue is.  Specify if it is LIFO or FIFO.
+==> A queue is a horizontal arrangement of links which connect to each other in a certain order. It follows First in first out(FIFO). In a queue the link that is the head goes in first and is the first one that can be taken out. An example would be the queue at the lunch room where you get in the line and when you are the head of the line you go out.
 d)  Complete the Queue class by writing the "peek" and "remove" methods.

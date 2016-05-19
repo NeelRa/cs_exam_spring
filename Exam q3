@@ -54,9 +54,22 @@ public class Queue{
   public Link peek(){
     return newlink;}
     
+  /*The Solution discussed in class.
+  public Link peek(){
+    Link temp = head;
+    for(int i=1; i<length; i++){
+      temp = temp.next;}
+    return tmep;}*/
+    
   public void remove(){
     Link temp = head;
     this.head = this.head.next;
+    
+  /*The solution Discussed in class.
+  public Link remove(){
+    Link temp = this.peek();
+    length = length-1;
+    return temp;}
     
   
 --------------------------------------------------------------

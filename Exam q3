@@ -32,7 +32,7 @@ public class Stack{
     return temp;}
     
     
-    length=length-1;}
+    //length=length-1;}
     
   
 --------------------------------------------------------------
